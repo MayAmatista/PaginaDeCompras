@@ -43,6 +43,11 @@ h1 {
     gap: 15 px
 }
 
+article{
+    position: relative;
+    text-align: center;
+}
+
 .articulos img.articulo{
     width: 75%;
 
@@ -50,8 +55,10 @@ h1 {
 }
 
 .articulos img.like-disabled{
-    width: 15px;
-    position: absolute;
+    width: 20px;
+    position: relative;
+    left: 100;
+    bottom: 78;
 }
 
 .articulos h3{
