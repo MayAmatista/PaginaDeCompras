@@ -15,17 +15,20 @@ header {
 
 nav .buscador {
     margin: 1vw;
+    border-radius: 10px;
+    border: 2px solid black;
+    width:175px;
 }
 nav .buscador input{
     border-radius: 10px;
+    border: hidden;
     position: relative;
     text-indent: 5px;
-    
+    outline: none;
 }
 
 nav .buscador img{
     width: 15px;
-    right: 25;
     position: relative;
     margin: -3;
 }
@@ -50,8 +53,10 @@ article{
 
 .articulos img.articulo{
     width: 75%;
+}
 
-
+.articulos img.articulo:hover{
+    width: 90%;
 }
 
 .articulos img.like-disabled{
@@ -60,6 +65,15 @@ article{
     left: 100;
     bottom: 78;
 }
+
+.articulos img.like-enabled{
+    width: 20px;
+    position: relative;
+    left: 100;
+    bottom: 78;
+    display: none;
+}
+
 
 .articulos h3{
     margin: 1vw;
