@@ -55,7 +55,7 @@ article{
     width: 75%;
 }
 
-.articulos img.articulo:hover{
+.articulos .articulo img:hover{
     width: 90%;
 }
 
