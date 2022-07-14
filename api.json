@@ -1,11 +1,11 @@
 {
     "main-products": [
-      { "id": 1, "image": "images/buzo1.jpg", "title": "Buzo", "price": 4500 },
-      { "id": 2, "image": "images/camisa1.jpg", "title": "Camisa", "price": 3050 },
-      { "id": 3, "image": "images/gorro1.jpg", "title": "Gorro", "price": 4000 },
+      { "id": 1, "image": "images/articulos/buzo1.jpg", "title": "Buzo", "price": 4500 },
+      { "id": 2, "image": "images/articulos/camisa1.jpg", "title": "Camisa", "price": 3050 },
+      { "id": 3, "image":"images/articulos/gorro1.jpg", "title": "Gorro", "price": 4000 },
       { "id": 4, "image": "images/gorro2.jpg", "title": "Gorro", "price": 1500 },
-      { "id": 5, "image": "images/medias1.jpg", "title": "Medias", "price": 650 },
-      { "id": 6, "image": "images/pantalon1.jpg", "title": "Pantalon", "price": 3500 }
+      { "id": 5, "image": "images/articulos/gorro2.jpg", "title": "Medias", "price": 650 },
+      { "id": 6, "image": "images/articulos/pantalon1.jpg", "title": "Pantalon", "price": 3500 }
     ]
   }
   
