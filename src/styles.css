@@ -55,23 +55,19 @@ article{
     width: 75%;
 }
 
-.articulos .articulo img:hover{
-    width: 90%;
-}
 
-.articulos img.like-disabled{
+.articulos .no-liked{
     width: 20px;
     position: relative;
     left: 100;
     bottom: 78;
 }
 
-.articulos img.like-enabled{
+.articulos .liked{
     width: 20px;
     position: relative;
     left: 100;
     bottom: 78;
-    display: none;
 }
 
 
