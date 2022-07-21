@@ -5,13 +5,17 @@ import './styles.css';
 
 
 function Product(props) {
+    const [liked, setLiked] = useState(false);
+
     const altText = `Imagen de ${props.value.title}`;
+    const currentClass = liked ? 'liked' : 'no-liked';
+
     return (
-        <article className = 'articulo'>
+        <article className = {currentClass}>
             <img src = {props.value.image} alt = {altText} />
             <h3> {props.value.title} </h3>
             <h3> $ {props.value.price} </h3>
-            <LikeComponent></LikeComponent>
+            <LikeComponent state = {liked} className = 'icon' onClick={() => setLiked(!liked)}></LikeComponent>
         </article>
     );
 }

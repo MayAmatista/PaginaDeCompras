@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 
-*{
-    font-family: "Heebo",sans-serif;
+* {
+    font-family: "Heebo", sans-serif;
     padding: 0;
     margin: 0;
 }
+
 header {
-   color: #fff;
-   background-color: #888; 
-   text-align: center;
-   padding: 1vw;
+    color: #fff;
+    background-color: #888;
+    text-align: center;
+    padding: 1vw;
 
 }
 
@@ -17,9 +18,10 @@ nav .buscador {
     margin: 1vw;
     border-radius: 10px;
     border: 2px solid black;
-    width:175px;
+    width: 175px;
 }
-nav .buscador input{
+
+nav .buscador input {
     border-radius: 10px;
     border: hidden;
     position: relative;
@@ -27,7 +29,7 @@ nav .buscador input{
     outline: none;
 }
 
-nav .buscador img{
+nav .buscador img {
     width: 15px;
     position: relative;
     margin: -3;
@@ -38,7 +40,7 @@ h1 {
     text-align: center;
 }
 
-.articulos{
+.articulos {
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -46,41 +48,36 @@ h1 {
     gap: 15 px
 }
 
-article{
+article {
     position: relative;
     text-align: center;
 }
 
-.articulos img.articulo{
+.articulos img article {
     width: 75%;
 }
 
 
-.articulos .no-liked{
-    width: 20px;
+.icon {
+    font-size: 30px;
     position: relative;
     left: 100;
     bottom: 78;
 }
 
-.articulos .liked{
-    width: 20px;
-    position: relative;
-    left: 100;
-    bottom: 78;
+.icon:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
 }
 
-
-.articulos h3{
+.articulos h3 {
     margin: 1vw;
     flex-wrap: wrap;
 }
 
-footer{
+footer {
     margin-top: 2vw;
     background-color: #888;
     color: #fff;
     padding: 1vw;
 }
-
-
