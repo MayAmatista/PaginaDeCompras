@@ -5,6 +5,13 @@
       { "id": 3, "image":"images/articulos/gorro1.jpg", "title": "Gorro Totoro", "price": 4000 },
       { "id": 4, "image": "images/articulos/gorro2.jpg", "title": "Gorro Star Wars", "price": 1500 },
       { "id": 5, "image": "images/articulos/pantalon1.jpg", "title": "Pantalón", "price": 3500 }
+    ],
+
+    "latest-products": [
+      { "id": 1, "image": "images/carousel/image1.jpg", "title": "Avatar"},
+      { "id": 2, "image": "images/carousel/image2.jpg", "title": "Sueters"},
+      { "id": 3, "image":"images/carousel/image3.jpg", "title": "StarWars"},
+      { "id": 4, "image": "images/carousel/image4.jpg", "title": "Nikelodeon"}
     ]
   }
   

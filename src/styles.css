@@ -27,12 +27,13 @@ nav .buscador input {
     position: relative;
     text-indent: 5px;
     outline: none;
+    margin: 0 3px;
 }
 
-nav .buscador img {
+nav .buscador .lupa-icon {
     width: 15px;
     position: relative;
-    margin: -3;
+    margin-top: 3px;
 }
 
 h1 {
@@ -53,9 +54,6 @@ article {
     text-align: center;
 }
 
-article.liked{
-    order: -1;
-}
 
 .articulos img article {
     width: 50%;
@@ -84,4 +82,46 @@ footer {
     background-color: #888;
     color: #fff;
     padding: 1vw;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.carousel img {
+ width: 100%;
+ position: relative;
+ align-content: center;
+}
+
+.carousel-button-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.carousel-button{
+    -webkit-text-stroke: 2px black;
+    color: transparent; 
+    background-color: transparent;
+    padding: 8px;
+    margin: 0 5px;
+    border: none;
+    
+}
+
+#button-previous{
+    position:absolute;
+    left: 0%;
+    bottom: 20%;
+}
+
+#button-next{
+    text-size-adjust: 50%;
+    position:absolute;
+    right: 0%;
+    bottom: 20%;
 }
