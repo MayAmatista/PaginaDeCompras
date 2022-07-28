@@ -1,4 +1,4 @@
-import {ProductList} from './components/products-component'
+import {ProductList} from './components/products-component';
 import { SearchComponent } from './components/search-component';
 import ReactDOM from 'react-dom/client';
 import {Carousel} from './components/carousel-component'
