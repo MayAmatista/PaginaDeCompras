@@ -1,5 +1,5 @@
 import {ProductList} from './components/products-component';
-import { SearchComponent } from './components/search-component';
+import { SearchComponent } from './components/nav-component-f';
 import ReactDOM from 'react-dom/client';
 import {Carousel} from './components/carousel-component'
 
