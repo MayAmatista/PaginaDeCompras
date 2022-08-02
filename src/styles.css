@@ -13,15 +13,14 @@ header {
     padding: 1vw;
 
 }
-
-nav .buscador {
+ .buscador {
     margin: 1vw;
     border-radius: 10px;
     border: 2px solid black;
     width: 175px;
 }
 
-nav .buscador input {
+ .buscador input {
     border-radius: 10px;
     border: hidden;
     position: relative;
@@ -30,7 +29,7 @@ nav .buscador input {
     margin: 0 3px;
 }
 
-nav .buscador .lupa-icon {
+ .buscador .lupa-icon {
     width: 15px;
     position: relative;
     margin-top: 3px;

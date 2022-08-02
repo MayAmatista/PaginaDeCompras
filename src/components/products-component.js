@@ -51,6 +51,13 @@ class ProductList extends React.Component{
             maxOrder: 0
         }
     }
+
+    filtrarProductos(){
+        return(
+            this.state.products.filter(product => product.title.toLowerCase().includes(this.props.search.toLowerCase()))
+        )
+    }
+
     componentDidMount() {
         const url = 'http://localhost:3000/main-products'
 
@@ -62,7 +69,7 @@ class ProductList extends React.Component{
     
 
     render(){
-        const productElements = this.state.products.map(product => (
+        const productElements = this.filtrarProductos().map(product => (
             <Product key= {product.id} value= {product} maxOrder = {this.state.maxOrder} onLike= {()=> this.setState({maxOrder : this.state.maxOrder - 1})}> </Product>
         ))
         return (
