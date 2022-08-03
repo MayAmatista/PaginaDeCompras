@@ -11,9 +11,24 @@ header {
     background-color: #888;
     text-align: center;
     padding: 1vw;
+    margin-top: 13px;
 
 }
+nav{
+    display: flex;
+    margin-top: 10px;
+}
+
+nav .hamburger-button{
+    display:inline-block;
+    margin-left: 10px;
+    font-size: 20px;
+    border: none;
+    margin-top: 13px;
+}
+
  .buscador {
+    display:inline-block;
     margin: 1vw;
     border-radius: 10px;
     border: 2px solid black;
@@ -23,7 +38,7 @@ header {
  .buscador input {
     border-radius: 10px;
     border: hidden;
-    position: relative;
+    position:relative;
     text-indent: 5px;
     outline: none;
     margin: 0 3px;
@@ -36,8 +51,10 @@ header {
 }
 
 h1 {
+    position:relative;
+    display:inline-block;
     color: #000;
-    text-align: center;
+    margin-left: 18vw;
 }
 
 .articulos {
@@ -123,4 +140,37 @@ footer {
     position:absolute;
     right: 0%;
     bottom: 20%;
+}
+
+
+.menu-wrapper{
+    position:absolute;
+    z-index: 100;
+    display:list-item;
+    background-color: #888;
+    height: 18vw;
+    width: 15vw;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 2%;
+}
+
+.menu-wrapper li{
+    padding-top: 10%;
+    margin-left: 10%;
+    list-style: none;
+}
+
+.menu-wrapper li a{ 
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px;
+    color: #fff;
+    margin-top: 2vw; 
+}
+.menu-wrapper li a:hover{ 
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+    width: 100%;
 }
