@@ -1,13 +1,14 @@
-
+import ReactDOM from 'react-dom/client';
+import React from 'react';
 
 const BranchOffices = (props) => {
 
     return(
-        <div className="sucursales">
-            <h3>
-                Hola
-            </h3>
-        </div>
+        <div>
+        <main>
+            <h3>HOLA</h3>
+        </main>
+    </div>
     )
 }
 

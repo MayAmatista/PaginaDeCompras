@@ -5,6 +5,9 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 //un metodo que se encargue de la busqueda seteando el estado search
 // traer con fetch los articulos que coincidan con la búsqueda 
 // renderizar la productList a partir de lo que obtenga de esa request
+
+//Para el futuro, cuando empiece a hacer la navegación el searchComponent además de cambiar el estado
+//tiene que redirigir a home
 class SearchComponent extends React.Component{
     constructor(props){
         super(props)

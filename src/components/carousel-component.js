@@ -12,7 +12,6 @@ function Carousel(props){
         fetch(url)
             .then(response => response.json())
             .then(ultimosProductos => setImagenes(ultimosProductos))
-            .then(it => console.log(imagenes))
             .catch(err => console.log(err))
 
     }, [])

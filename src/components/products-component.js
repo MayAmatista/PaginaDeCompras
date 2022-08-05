@@ -30,12 +30,12 @@ class Product extends React.Component {
 
     onClick() {
         if (!this.state.liked) {
-            this.setState({order: this.props.maxOrder -1});
+            this.setState({ order: this.props.maxOrder - 1 });
             this.props.onLike();
         } else {
-            this.setState({order: 0})
+            this.setState({ order: 0 })
         }
-        this.setState({liked: !this.state.liked})
+        this.setState({ liked: !this.state.liked })
     }
 
 }
@@ -43,34 +43,37 @@ class Product extends React.Component {
 
 //Componente que renderiza la lista de productos desde la API
 //Componentes hijos: Products
-class ProductList extends React.Component{
-    constructor(props){
+class ProductList extends React.Component {
+    constructor(props) {
         super(props)
         this.state = {
-            products:[],
+            products: [],
             maxOrder: 0
         }
     }
 
-    filtrarProductos(){
-        return(
-            this.state.products.filter(product => product.title.toLowerCase().includes(this.props.search.toLowerCase()))
-        )
-    }
+
 
     componentDidMount() {
         const url = 'http://localhost:3000/main-products'
 
         fetch(url)
-          .then(response => response.json())
-          .then(productos => this.setState({products: productos }))
-          .catch(err => console.log(err));
-      }
-    
+            .then(response => response.json())
+            .then(productos => this.setState({ products: productos }))
+            .catch(err => console.log(err));
+    }
 
-    render(){
+    filtrarProductos() {
+        console.log("busqueda", this.props.search)
+        return (
+            this.state.products.filter(product => product.title.toLowerCase().includes(this.props.search.toLowerCase()))
+        )
+    }
+
+
+    render() {
         const productElements = this.filtrarProductos().map(product => (
-            <Product key= {product.id} value= {product} maxOrder = {this.state.maxOrder} onLike= {()=> this.setState({maxOrder : this.state.maxOrder - 1})}> </Product>
+            <Product key={product.id} value={product} maxOrder={this.state.maxOrder} onLike={() => this.setState({ maxOrder: this.state.maxOrder - 1 })}> </Product>
         ))
         return (
             <div className='articulos' >
@@ -79,8 +82,8 @@ class ProductList extends React.Component{
         );
 
     }
-    
+
 }
 
 
-export {ProductList} ;
+export { ProductList };
