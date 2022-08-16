@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 //import {GoogleMap, withScriptJs,withGoogleMap} from 'react-google-maps'
 
 //Integrar mapa
-//API KEY: AIzaSyBXaprf78yhDgeD1raD4-aAloAlspJLxX8
+
 
 const Office = (props) => {
     return(
