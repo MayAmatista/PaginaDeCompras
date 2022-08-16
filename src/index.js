@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Menu } from "./components/menu-component";
 import ReactDOM from 'react-dom/client';
 import { Home } from "./pages/home";
-import { BranchOffices } from "./components/branch-offices-component";
+import { BranchOffices } from "./pages/branch-offices-component";
 import { SearchComponent } from "./components/nav-component-f";
 import React, { useState } from "react";
 
@@ -15,7 +15,7 @@ const App = () => {
             </header>
             <BrowserRouter>
                 <nav>
-                    <Menu></Menu>
+                    <Menu cleanSearch = {() => {setSearch('')}}></Menu>
                     <SearchComponent setSearch={setSearch} />
                     <h1> THIS IS HAPPY NEW YEAR </h1>
                 </nav>

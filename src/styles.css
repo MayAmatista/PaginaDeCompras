@@ -14,45 +14,46 @@ header {
     margin-top: 13px;
 
 }
-nav{
+
+nav {
     display: flex;
     margin-top: 10px;
 }
 
-nav .hamburger-button{
-    display:inline-block;
+nav .hamburger-button {
+    display: inline-block;
     margin-left: 10px;
     font-size: 20px;
     border: none;
     margin-top: 13px;
 }
 
- nav .buscador {
-    display:inline-block;
+nav .buscador {
+    display: inline-block;
     margin: 1vw;
     border-radius: 10px;
     border: 2px solid black;
     width: 175px;
 }
 
- nav .buscador input {
+nav .buscador input {
     border-radius: 10px;
     border: hidden;
-    position:relative;
+    position: relative;
     text-indent: 5px;
     outline: none;
     margin: 0 3px;
 }
 
- .buscador .lupa-icon {
+.buscador .lupa-icon {
     width: 15px;
     position: relative;
     margin-top: 3px;
 }
 
-h1 {
-    position:relative;
-    display:inline-block;
+nav h1 {
+    position: relative;
+    display: inline-block;
     color: #000;
     margin-left: 18vw;
 }
@@ -108,45 +109,45 @@ footer {
 }
 
 .carousel img {
- width: 100%;
- position: relative;
- align-content: center;
+    width: 100%;
+    position: relative;
+    align-content: center;
 }
 
-.carousel-button-container{
+.carousel-button-container {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
 }
 
-.carousel-button{
+.carousel-button {
     -webkit-text-stroke: 2px black;
-    color: transparent; 
+    color: transparent;
     background-color: transparent;
     padding: 8px;
     margin: 0 5px;
     border: none;
-    
+
 }
 
-#button-previous{
-    position:absolute;
+#button-previous {
+    position: absolute;
     left: 0%;
     bottom: 20%;
 }
 
-#button-next{
+#button-next {
     text-size-adjust: 50%;
-    position:absolute;
+    position: absolute;
     right: 0%;
     bottom: 20%;
 }
 
 
-.menu-wrapper{
-    position:absolute;
+.menu-wrapper {
+    position: absolute;
     z-index: 100;
-    display:list-item;
+    display: list-item;
     background-color: #888;
     height: 20vw;
     width: 15vw;
@@ -156,24 +157,35 @@ footer {
 }
 
 
-.menu-wrapper .item-nav-wrapper{ 
-    display:list-item;
+.menu-wrapper .item-nav-wrapper {
+    display: list-item;
     margin-left: 10%;
     list-style: none;
     text-decoration: none;
     font-size: 1em;
     padding: 0.5px;
     color: #fff;
-    margin-top: 2vw; 
+    margin-top: 2vw;
 }
 
-.menu-wrapper .item-nav-wrapper:hover{ 
+.menu-wrapper .item-nav-wrapper:hover {
     text-decoration: none;
     font-weight: bold;
 }
+
 @media (max-width: 1000px) {
     .menu-wrapper .item-nav-wrapper {
-      font-size: 0.8em;
-      margin-top: 0.8vw ;
+        font-size: 0.8em;
+        margin-top: 0.8vw;
     }
-  }
+}
+
+.office {
+    text-align: center;
+    margin-top: 25px;
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 25px;
+}

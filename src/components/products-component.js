@@ -64,7 +64,6 @@ class ProductList extends React.Component {
     }
 
     filtrarProductos() {
-        console.log("busqueda", this.props.search)
         return (
             this.state.products.filter(product => product.title.toLowerCase().includes(this.props.search.toLowerCase()))
         )

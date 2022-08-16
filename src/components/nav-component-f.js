@@ -9,23 +9,11 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 //Para el futuro, cuando empiece a hacer la navegación el searchComponent además de cambiar el estado
 //tiene que redirigir a home
 class SearchComponent extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {
-            search: ''
-        }
-    }
 
-    searcher(e){
-        this.setState({search: e.target.value})
-        this.props.setSearch(e.target.value);
-    }
-
-    
     render(){
         return (
             <div className="buscador"> 
-                <input onChange = {(e) => this.searcher(e)}  type="text" placeholder="Buscar"></input>
+                <input onChange = {(e) => this.props.setSearch(e.target.value)}  type="text" placeholder="Buscar"></input>
                 <FontAwesomeIcon className= 'lupa-icon' icon= {faMagnifyingGlass} />
             </div>
         );
