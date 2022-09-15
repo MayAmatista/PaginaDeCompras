@@ -52,10 +52,8 @@ class ProductList extends React.Component {
         }
     }
 
-
-
     componentDidMount() {
-        const url = 'http://localhost:3000/main-products'
+        const url = 'http://localhost:4000/api/products'
 
         fetch(url)
             .then(response => response.json())
