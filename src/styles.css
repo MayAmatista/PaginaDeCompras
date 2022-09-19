@@ -67,6 +67,12 @@ nav h1 {
     gap: 15 px
 }
 
+@media (max-width: 1000px) {
+    .articulos {
+        grid-template-columns: 1fr;
+    }
+}
+
 article {
     border-radius: 10px;
     background-color: #eee; 

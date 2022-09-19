@@ -7,7 +7,7 @@ function Carousel(props){
 
 
     useEffect(() => {
-        const url = 'http://localhost:4000/latest-products';
+        const url = 'http://localhost:4000/api/latestProducts';
 
         fetch(url)
             .then(response => response.json())

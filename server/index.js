@@ -3,6 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const productRoutes = require('./routes/product')
+const latestProductRoutes = require('./routes/latestProduct')
 
 const app = express();
 const port = process.env.PORT || 4000; 
@@ -11,6 +12,7 @@ app.use(cors());
 //middleware
 app.use(express.json());
 app.use('/api', productRoutes);
+app.use('/api', latestProductRoutes)
 
 
 app.get('/latest-products', (request, response) => {
